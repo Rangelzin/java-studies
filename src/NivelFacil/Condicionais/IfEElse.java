@@ -1,4 +1,4 @@
-package Condicionais;
+package NivelFacil.Condicionais;
 
 public class IfEElse {
     public static void main(String[] args) {

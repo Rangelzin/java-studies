@@ -1,4 +1,4 @@
-package Condicionais;
+package NivelFacil.Condicionais;
 
 public class Ternários {
     public static void main(String[] args) {
