@@ -15,7 +15,7 @@ public class Ninja {
 
     // Criar um metodo Publico personalizado
     public String EuSouUmNinja() {
-        return "Oi, eu sou um Ninja!";
+        return "Oi, eu sou um Ninja!\n";
     }
 
     public int TempoParaHokage(int idadeMinimaParaSerHokage){

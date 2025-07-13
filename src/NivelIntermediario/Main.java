@@ -44,10 +44,10 @@ public class Main {
         Boruto.AtivarJougan();
         Boruto.AtivarKarma();
         System.out.println(Sasuke.EuSouUmNinja());
+        System.out.println(Naruto.EuSouUmNinja());
 
         int QuantoTempoFalta = Sasuke.TempoParaHokage(50);
         System.out.println("Você tem: "+ Sasuke.idade + " anos, então falta no mínimo: "  + QuantoTempoFalta + " anos para se tornar um Hokage");
-
 
     }
 }
