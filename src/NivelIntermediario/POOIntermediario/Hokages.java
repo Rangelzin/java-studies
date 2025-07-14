@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOIntermediario;
 
 public abstract class Hokages {
 

@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOIntermediario;
 
 public class Senju extends Hokages {
     public void sabedoriaHokage() {
