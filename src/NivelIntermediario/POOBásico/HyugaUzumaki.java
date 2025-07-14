@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOBásico;
 
 public interface HyugaUzumaki {
 

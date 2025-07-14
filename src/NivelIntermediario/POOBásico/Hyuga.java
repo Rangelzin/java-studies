@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOBásico;
 
 public class Hyuga extends Ninja{
 

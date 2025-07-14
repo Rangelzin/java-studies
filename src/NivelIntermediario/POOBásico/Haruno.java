@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOBásico;
 
 public class Haruno extends Ninja{
     public void AtivarCura() {

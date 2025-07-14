@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.POOBásico;
 
 public class Boruto extends Uzumaki implements HyugaUzumaki{
     public void AtivarKarma() {

@@ -1,6 +1,6 @@
 package NivelIntermediario;
 
-public class Hokages {
+public abstract class Hokages {
 
     String nome;
     String aldeia;
@@ -21,4 +21,6 @@ public class Hokages {
         this.idade = idade;
         this.vivoOunao = vivoOunao;
     }
+
+    public abstract void sabedoriaHokage();
 }
