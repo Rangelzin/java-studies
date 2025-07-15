@@ -1,6 +1,6 @@
 package NivelIntermediario.POOIntermediario;
 
-public class Uchiha extends Ninja{
+public class Uchiha extends Ninja implements Sharigan{
 
     public Uchiha() {
         super();
@@ -14,4 +14,10 @@ public class Uchiha extends Ninja{
     public void habilidadeEspecial() {
         System.out.println("Meu nome é " + nome + " e esse é meu ataque de Fogo");
     }
+
+    public void ShariganAtivado() {
+        System.out.println(nome + ": um Uchiha ativou o Sharingan!!!");
+    }
 }
+
+

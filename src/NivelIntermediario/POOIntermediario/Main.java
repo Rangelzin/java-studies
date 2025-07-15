@@ -17,10 +17,21 @@ public class Main {
         Sasuke.aldeia = "Konoha";
         Sasuke.idade = 17;
 
+        Sasuke.ShariganAtivado();
+
         Naruto.habilidadeEspecial();
         Naruto.estrategiaDeBatalhaNinja();
 
         Uchiha Itachi = new Uchiha("Itachi Uchiha", "Konoha", 27);
         Itachi.habilidadeEspecial();
+
+        Hatake Kakashi = new Hatake();
+        Kakashi.nome = "Kakashi Hatake";
+        Kakashi.aldeia = "Konoha";
+        Kakashi.idade = 35;
+
+        Kakashi.BoasVindasHatake();
+        Kakashi.ShariganAtivado();
+        Kakashi.NinjadeElite();
     }
 }
