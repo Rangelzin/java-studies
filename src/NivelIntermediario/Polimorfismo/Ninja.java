@@ -1,4 +1,4 @@
-package NivelIntermediario.POOIntermediario;
+package NivelIntermediario.Polimorfismo;
 
 public abstract class Ninja implements EstrategiaBatalha {
 
@@ -28,15 +28,30 @@ public abstract class Ninja implements EstrategiaBatalha {
         Rank = rank;
     }
 
+    final void tacarKunai( ){
+        System.out.println("Eu taquei uma kunai e sou da CLASSE MAE");
+    }
+
     public void habilidadeEspecial() {
         System.out.println("Meu nome é " + nome + " e esse é meu ataque especial");
     }
 
-    @Override
     public void estrategiaDeBatalhaNinja() {
-        System.out.println("Meu nome é " + nome + " e esse é minha estrategia de batalha");
+        System.out.println("Meu nome é " + nome + " e esse é minha ESTRATEGIA de batalha");
     }
 
+    public void inteligenciaCombate() {
+        System.out.println("Meu nome é " + nome + " e esse é minha INTELIGENCIA de batalha");
+    }
 
+    public void inteligenciaCombate(int qi) {
+        if (qi > 150) {
+            System.out.println("Seu QI é: " + qi + " e você é um gênio!");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é: " + qi + " e você é um promissor!");
+        } else {
+            System.out.println("Seu QI é: " + qi + " e você precisa treinar mais suaa inteligencia!");
+        }
+    }
 
 }

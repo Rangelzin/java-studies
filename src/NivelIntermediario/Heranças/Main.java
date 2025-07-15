@@ -1,4 +1,4 @@
-package NivelIntermediario.POOBásico;
+package NivelIntermediario.Heranças;
 
 public class    Main {
     public static void main(String[] args) {

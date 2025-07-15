@@ -1,4 +1,4 @@
-package NivelIntermediario.POOIntermediario;
+package NivelIntermediario.Polimorfismo;
 
 public interface Sharigan {
 
