@@ -45,6 +45,19 @@ public class Main {
             naruto.setNome("Naruto Uzumaki");
             System.out.println("Meu NOVO nome é: " + naruto.getNome());
 
-        System.out.println("\n------------------------ Sasuke Uchiha ------------------------\n");
+        System.out.println("\n------------------------ Generics ------------------------\n");
+            EquipamentosNinjas kunai = new EquipamentosNinjas("Kunai de ferro");
+            EquipamentosNinjas shuriken = new EquipamentosNinjas("Shuriken");
+            EquipamentosNinjas pergaminho = new EquipamentosNinjas("Pergaminho");
+
+            BolsaGenerica<EquipamentosNinjas> bolsaGenerica = new BolsaGenerica<>();
+            bolsaGenerica.adcionarEquipamentos(kunai);
+            bolsaGenerica.adcionarEquipamentos(shuriken);
+            bolsaGenerica.adcionarEquipamentos(pergaminho);
+
+            System.out.println(bolsaGenerica);
+
+
+        System.out.println("\n------------------------ Fim  ------------------------");
     }
 }
