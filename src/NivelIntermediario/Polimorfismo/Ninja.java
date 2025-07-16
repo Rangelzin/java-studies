@@ -2,9 +2,6 @@ package NivelIntermediario.Polimorfismo;
 
 public abstract class Ninja implements EstrategiaBatalha {
 
-    //TODO: incluir 2 novos atributos: NumeroDeMissoesConcluidas e Rank
-    //TODO: Rank: Gennin, Chunnin, Jounnin e Kage
-
     String nome;
     String aldeia;
     int idade;
@@ -19,8 +16,6 @@ public abstract class Ninja implements EstrategiaBatalha {
         this.aldeia = aldeia;
         this.idade = idade;
     }
-
-    //TODO: Sobrecarga do construtor
 
     public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, RankNinja rank) {
         this(nome, aldeia, idade);

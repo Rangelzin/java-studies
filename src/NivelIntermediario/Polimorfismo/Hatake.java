@@ -1,6 +1,6 @@
 package NivelIntermediario.Polimorfismo;
 
-public class Hatake extends Ninja implements Sharigan,Ambu {
+public class Hatake extends Ninja implements Sharigan, Anbu {
     public Hatake() {
     }
 
