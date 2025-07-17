@@ -2,6 +2,7 @@ package NivelIntermediario.Encapsulamento;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,7 +58,24 @@ public class Main {
 
             System.out.println(bolsaGenerica);
 
+        System.out.println("\n------------------------ Stacks  ------------------------");
+
+            Stack<String> ninjaStack = new Stack<>();
+            ninjaStack.push("Naruto Uzumaki");
+            ninjaStack.push("Sasuke Uchiha");
+            ninjaStack.push("Sakura Haruno");
+
+            System.out.println("Minha stack atual = " + ninjaStack);
+            ninjaStack.pop();
+            System.out.println("Minha stack atualizada com pop = " + ninjaStack);
+            System.out.println("o proximo item da minha stack: " + ninjaStack.peek());
+            System.out.println("o tamanho da minha stack: " + ninjaStack.size());
+
+
+
 
         System.out.println("\n------------------------ Fim  ------------------------");
+
     }
+
 }
