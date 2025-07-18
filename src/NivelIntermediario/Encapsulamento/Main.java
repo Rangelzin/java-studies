@@ -1,8 +1,6 @@
 package NivelIntermediario.Encapsulamento;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -71,6 +69,17 @@ public class Main {
             System.out.println("o proximo item da minha stack: " + ninjaStack.peek());
             System.out.println("o tamanho da minha stack: " + ninjaStack.size());
 
+        System.out.println("\n------------------------ Queue  ------------------------");
+            Queue<String> ninjasQueue = new LinkedList<>();
+            ninjasQueue.add("Naruto");
+            ninjasQueue.add("Sasuke");
+            ninjasQueue.add("Sakura");
+            ninjasQueue.add("Kakashi");
+            ninjasQueue.add("Shikamaru");
+            System.out.println("Ninjas na fila: " + ninjasQueue);
+            ninjasQueue.poll();
+            System.out.println("Ninjas na fila atualizada: " + ninjasQueue);
+            System.out.println("O ninja no HEAD: " + ninjasQueue.peek());
 
 
 
