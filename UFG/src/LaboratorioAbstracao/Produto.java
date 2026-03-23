@@ -39,7 +39,7 @@ public class Produto {
             this.quantidade -= quantidade;
             double valor_venda = quantidade * this.valor_produto;
 
-            System.out.println("O Produto: " + this.nome_produto + ", preço total vendido: " + valor_venda);
+            System.out.println("O ProdutoEncapsulado: " + this.nome_produto + ", preço total vendido: " + valor_venda);
         }
     }
 
