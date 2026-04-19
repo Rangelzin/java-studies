@@ -2,6 +2,7 @@ package LaboratorioGeral.Ex9;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Principal {
@@ -73,13 +74,9 @@ public class Principal {
             System.out.println();
         }
 
-        // Mostrar totais por gênero (simplificado)
         System.out.println("=== TOTAIS POR GÊNERO ===");
-        for (int i = 0; i < 5; i++) {
-            int total = Livro.getTotalPorGenero(i);
-            if (total > 0) {
-                System.out.println("Gênero " + (i + 1) + ": " + total + " livros");
-            }
+        for (Map.Entry<String, Integer> entry : Livro.getTotaisPorGenero().entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue() + " livros");
         }
     }
 }

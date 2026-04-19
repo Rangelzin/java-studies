@@ -1,5 +1,8 @@
 package LaboratorioGeral.Ex9;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class Livro {
     private String titulo;
     private int codigo;
@@ -10,7 +13,7 @@ public class Livro {
     private String local;
     private String genero;
     private static int totalLivros = 0;
-    private static int[] contadorGeneros = new int[5]; // Para até 5 gêneros diferentes
+    private static Map<String, Integer> contadorGeneros = new LinkedHashMap<>();
 
     public Livro(int codigo, String titulo, Pessoa autor) {
         this.codigo = codigo;
@@ -43,21 +46,29 @@ public class Livro {
 
     public String getGenero() { return genero; }
     public void setGenero(String genero) {
+        if (this.genero != null && contadorGeneros.containsKey(this.genero)) {
+            int totalAnterior = contadorGeneros.get(this.genero) - 1;
+            if (totalAnterior <= 0) {
+                contadorGeneros.remove(this.genero);
+            } else {
+                contadorGeneros.put(this.genero, totalAnterior);
+            }
+        }
+
         this.genero = genero;
-        // Contar por gênero (simplificado)
-        if (genero != null) {
-            for (int i = 0; i < contadorGeneros.length; i++) {
-                if (contadorGeneros[i] == 0) {
-                    contadorGeneros[i] = 1;
-                    break;
-                }
+
+        if (genero != null && !genero.isBlank()) {
+            if (contadorGeneros.containsKey(genero)) {
+                contadorGeneros.put(genero, contadorGeneros.get(genero) + 1);
+            } else if (contadorGeneros.size() < 5) {
+                contadorGeneros.put(genero, 1);
             }
         }
     }
 
     public static int getTotalLivros() { return totalLivros; }
-    public static int getTotalPorGenero(int index) {
-        return index < contadorGeneros.length ? contadorGeneros[index] : 0;
+    public static Map<String, Integer> getTotaisPorGenero() {
+        return contadorGeneros;
     }
 
     public String getReferencia() {

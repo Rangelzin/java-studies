@@ -30,6 +30,9 @@ public class Cliente {
     }
 
     public void setIdade(int idade) {
+        if (idade < 0) {
+            throw new IllegalArgumentException("Idade não pode ser negativa");
+        }
         this.idade = idade;
     }
 

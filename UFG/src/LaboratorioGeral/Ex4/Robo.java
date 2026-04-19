@@ -32,7 +32,7 @@ public class Robo {
     }
 
     public void andar(int deltaX, int deltaY) {
-        if (!status.equals("ligado")) {
+        if (status.equals("desligado")) {
             System.out.println("Erro: Robô precisa estar ligado para andar.");
             return;
         }
@@ -44,7 +44,7 @@ public class Robo {
     }
 
     public void aspirar(int quantidade) {
-        if (!status.equals("ligado")) {
+        if (status.equals("desligado")) {
             System.out.println("Erro: Robô precisa estar ligado para aspirar.");
             return;
         }
@@ -59,6 +59,11 @@ public class Robo {
     }
 
     public void parar() {
+        if (status.equals("desligado")) {
+            System.out.println("Erro: Robô precisa estar ligado para parar.");
+            return;
+        }
+
         if (status.equals("andando")) {
             status = "parado";
             System.out.println("Robô parado.");
